@@ -1,0 +1,16 @@
+{
+  "name": "postme",
+  "version": "1.0.0",
+  "description": "My first PWA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pwa",
+    "gesicu",
+    "mriveaux"
+  ],
+  "author": "mdriveaux2015@gmail.com",
+  "license": "ISC"
+}

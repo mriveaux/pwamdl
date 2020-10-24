@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Ing. Miguel Diaz Riveaux">
+
+    <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
+    <script src="bower_components/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="app.css">
+    <title>Postme</title>
+</head>
+<body>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Postme</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="">Ver publicaciones</a>
+                <a class="mdl-navigation__link" href="">Im&aacute;genes</a>
+                <a class="mdl-navigation__link" href="">Videos</a>
+                <a class="mdl-navigation__link" href="">Audios</a>
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Postme</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">
+                <i class="material-icons mdl-color-text--primary">home</i>
+                Ir a la p&aacute;gina principal
+            </a>
+            <a class="mdl-navigation__link" href="">
+                <i class="material-icons mdl-color-text--primary">post_add</i>
+                Ver publicaciones
+            </a>
+            <a class="mdl-navigation__link" href="">
+                <i class="material-icons mdl-color-text--primary">camera_alt</i>
+                Im&aacute;genes
+            </a>
+            <a class="mdl-navigation__link" href="">
+                <i class="material-icons mdl-color-text--primary">ondemand_video</i>
+                Videos
+            </a>
+            <a class="mdl-navigation__link" href="">
+                <i class="material-icons mdl-color-text--primary">music_video</i>
+                Audios
+            </a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content"><!-- Your content goes here --></div>
+        <div class="floating-button-right">
+            <!-- Colored FAB button with ripple -->
+            <button id="btnAdd" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                <i class="material-icons">add</i>
+            </button>
+        </div>
+    </main>
+
+</div>
+
+
+</body>
+</html>
