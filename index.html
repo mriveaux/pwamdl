@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Ing. Miguel Diaz Riveaux">
-
+    <link rel="icon" type="image/x-icon" href="gesi.png">
     <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
     <script src="bower_components/material-design-lite/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -23,12 +23,42 @@
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link" href="">Ver publicaciones</a>
-                <a class="mdl-navigation__link" href="">Im&aacute;genes</a>
-                <a class="mdl-navigation__link" href="">Videos</a>
-                <a class="mdl-navigation__link" href="">Audios</a>
+                <a class="mdl-navigation__link" href="">
+                    <i class="material-icons mdl-color-text--white">home</i>
+                    Ir a la p&aacute;gina principal
+                </a>
+                <a class="mdl-navigation__link" href="">
+                    <i class="material-icons mdl-color-text--white">post_add</i>
+                    Ver publicaciones
+                </a>
+                <a class="mdl-navigation__link" href="">
+                    <i class="material-icons mdl-color-text--white">camera_alt</i>
+                    Im&aacute;genes
+                </a>
+                <a class="mdl-navigation__link" href="">
+                    <i class="material-icons mdl-color-text--white">ondemand_video</i>
+                    Videos
+                </a>
+                <a class="mdl-navigation__link" href="">
+                    <i class="material-icons mdl-color-text--white">music_video</i>
+                    Audios
+                </a>
+
+                <!-- Right aligned menu below button -->
+                <button id="demo-menu-lower-right"
+                        class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                    for="demo-menu-lower-right">
+                    <li class="mdl-menu__item">Some Action</li>
+                    <li class="mdl-menu__item">Another Action</li>
+                    <li disabled class="mdl-menu__item">Disabled Action</li>
+                    <li class="mdl-menu__item">Yet Another Action</li>
+                </ul>
             </nav>
         </div>
+
     </header>
     <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">Postme</span>
@@ -54,9 +84,18 @@
                 Audios
             </a>
         </nav>
+
     </div>
     <main class="mdl-layout__content">
-        <div class="page-content"><!-- Your content goes here --></div>
+
+        <div class="page-content">
+            <!-- MDL Progress Bar with Indeterminate Progress -->
+            <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+
+            <!-- MDL Spinner Component with Single Color -->
+            <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+            <!-- Your content goes here -->
+        </div>
         <div class="floating-button-right">
             <!-- Colored FAB button with ripple -->
             <button id="btnAdd" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
